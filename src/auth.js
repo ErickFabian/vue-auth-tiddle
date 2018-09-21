@@ -11,7 +11,7 @@ Vue.router = router
 
 Vue.use(VueAxios, axios)
 
-Vue.axios.defaults.baseURL = 'http://localhost:3000/';
+Vue.axios.defaults.baseURL = process.env.VUE_APP_API_HOST;
 
 Vue.use(VueAuth, {
   auth:       authDriver,

@@ -10,7 +10,8 @@ import './auth'
 import { sync } from 'vuex-router-sync'
 
 import Element from 'element-ui'
-import BootstrapVue from 'bootstrap-vue'
+import locale from 'element-ui/lib/locale/lang/es'
+
 import Notifications from 'vue-notification'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -21,8 +22,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-Vue.use(BootstrapVue)
-Vue.use(Element)
+Vue.use(Element, { locale })
 Vue.use(Notifications)
 
 library.add(faCoffee)
